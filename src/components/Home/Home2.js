@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> java,AWS Javascript and NodeJs. </b>
+                <b className="purple"> Java, AWS, SQL, Javascript and NodeJs. </b>
               </i>
               <br />
               <br />
