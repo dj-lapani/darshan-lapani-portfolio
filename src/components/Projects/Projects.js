@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import CoderGif from "../../Assets/coder.gif";
 
 function Projects() {
   return (
@@ -20,19 +21,20 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        {/* <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={CoderGif}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink=""
+              title="OAuth2 Server"
+              description="An OAuth2 server with in-memory user management provides secure access control for applications by utilizing the OAuth2 protocol, while storing user credentials and authorization details in server memory. This approach ensures efficient authentication and authorization processes without the need for persistent storage, enhancing both performance and simplicity."
+              ghLink="https://github.com/dj-lapani/auth-server"
               demoLink=""
             />
           </Col>
+          </Row>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}

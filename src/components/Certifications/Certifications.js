@@ -1,8 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import CertificationCard from "./CertificationCard";
-import Microservices from "../../Assets/Certifications/Microservices_Udemy.jpg";
-import AWS_CPP_Udemy from "../../Assets/Certifications/AWS_CPP_Udemy.jpg";
+import UdemyMicroservices from "../../Assets/Certifications/Microservices_Udemy.jpg";
+import UdemyAwsCPP from "../../Assets/Certifications/AWS_CPP_Udemy.jpg";
+import UdemySpringBoot from "../../Assets/Certifications/udemy_spring_boot.jpg";
+import UdemyHibernateJPA from "../../Assets/Certifications/udemy_hibernate_jpa.jpg";
+import UdemyFunctionalProgramming from "../../Assets/Certifications/udemy_functional_programming.jpg";
+import UdemyReactJS from "../../Assets/Certifications/udemy_react_js.jpg";
 
 function Certifications() {
   return (
@@ -18,7 +22,7 @@ function Certifications() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <CertificationCard
-              imgPath={Microservices}
+              imgPath={UdemyMicroservices}
               isBlog={false}
               title=""
               description="I’ve obtained a certification: Master Microservices with Spring Boot and Spring Cloud from Udemy!"
@@ -26,10 +30,44 @@ function Certifications() {
           </Col>
           <Col md={4} className="project-card">
             <CertificationCard
-              imgPath={AWS_CPP_Udemy}
+              imgPath={UdemyAwsCPP}
               isBlog={false}
               title=""
               description="I’ve obtained a certification: AWS Certified Cloud Practitioner from Udemy!"
+              />
+          </Col>
+          <Col md={4} className="project-card">
+            <CertificationCard
+              imgPath={UdemySpringBoot}
+              isBlog={false}
+              title=""
+              description="I’ve obtained a certification: Spring Boot Fundamentals from Udemy!"
+              />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <CertificationCard
+              imgPath={UdemyHibernateJPA}
+              isBlog={false}
+              title=""
+              description="I’ve obtained a certification: Java Persistence: Hibernate and JPA Fundamentals from Udemy!"
+              />
+          </Col>
+          <Col md={4} className="project-card">
+            <CertificationCard
+              imgPath={UdemyFunctionalProgramming}
+              isBlog={false}
+              title=""
+              description="I’ve obtained a certification: Learn Java Functional Programming with Lambdas and Streams from Udemy!"
+              />
+          </Col>
+          <Col md={4} className="project-card">
+            <CertificationCard
+              imgPath={UdemyReactJS}
+              isBlog={false}
+              title=""
+              description="I’ve obtained a certification: React - The Complete Guide (incl Hooks, React Router, Redux) from Udemy!"
               />
           </Col>
         </Row>
