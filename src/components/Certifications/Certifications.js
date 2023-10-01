@@ -7,6 +7,7 @@ import UdemySpringBoot from "../../Assets/Certifications/udemy_spring_boot.jpg";
 import UdemyHibernateJPA from "../../Assets/Certifications/udemy_hibernate_jpa.jpg";
 import UdemyFunctionalProgramming from "../../Assets/Certifications/udemy_functional_programming.jpg";
 import UdemyReactJS from "../../Assets/Certifications/udemy_react_js.jpg";
+import AwsCPP from "../../Assets/Certifications/AWS_CCP.jpg";
 
 function Certifications() {
   return (
@@ -20,6 +21,14 @@ function Certifications() {
           Here are a few certifications I've completed.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <CertificationCard
+              imgPath={AwsCPP}
+              isBlog={false}
+              title=""
+              description="I’ve obtained a certification: Certified Cloud Practitioner from AWS!"
+              />
+          </Col>
           <Col md={4} className="project-card">
             <CertificationCard
               imgPath={UdemyMicroservices}
@@ -44,8 +53,7 @@ function Certifications() {
               description="I’ve obtained a certification: Spring Boot Fundamentals from Udemy!"
               />
           </Col>
-        </Row>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        
           <Col md={4} className="project-card">
             <CertificationCard
               imgPath={UdemyHibernateJPA}
